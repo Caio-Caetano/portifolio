@@ -1,101 +1,58 @@
-import Image from "next/image";
+import { MapPin, MessageCircle, Mail, Linkedin, Github, Download, PhoneOutgoing } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="flex h-screen justify-center items-center gap-[30px] font-[family-name:var(--kanit-font)]">
+      {/* Info Card */}
+      <div className="flex flex-col justify-center items-center bg-blue rounded-3xl shadow-3xl w-[300px] h-5/6 p-30">
+        <div className="w-[200px] h-[200px] rounded-full bg-secondary border-3 border-white mb-5 overflow-hidden">
+          <Image
+            src="/memoji-1.png"
+            width={200}
+            height={200}
+            alt="Me"
+          />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <span className="text-white text-[32px] font-semibold">Caio Caetano</span>
+        <hr className="bg-white w-2/5 m-2.5" />
+        <span className="text-white text-[15px] mb-30">Software Engineer</span>
+        <div>
+          <div className="flex items-center text-white leading-none mb-5">
+            <MapPin size={24} className="mr-2.5"/>
+            <div>
+              <p>Sao Jose dos Campos</p>
+              <small>Sao Paulo - Brazil</small>
+            </div>
+          </div>
+          <div className="flex items-center text-white leading-none mb-5">
+            <MessageCircle size={24} className="mr-2.5"/>
+            <div>
+              <a className='relative inline cursor-pointer before:bg-white before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100' href="https://wa.me/5512981351855" target='_blank'><p>+55 12 98135-1855</p></a>
+            </div>
+          </div>
+          <div className="flex items-center text-white leading-none mb-5">
+            <Mail size={24} className="mr-2.5"/>
+            <div>
+              <p>caio.lcaetano@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div className="flex text-white">
+          <a className="transition-all duration-200 hover:scale-125" href="https://www.linkedin.com/in/caio-caetano/" target='_blank'><Linkedin size={24} className="mr-2.5"/></a>
+          <a className="transition-all duration-200 hover:scale-125" href="https://github.com/Caio-Caetano" target='_blank'><Github size={24} className="mr-2.5"/></a>
+        </div>
+        <button className="group relative mt-auto overflow-hidden mb-2.5 h-12 w-full bg-gradient-to-r from-light to-white rounded-full text-primary font-medium transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-dark before:rounded-full before:duration-100 before:ease-linear hover:bg-white hover:text-white hover:before:border-[25px]">
+          <span className="flex justify-center items-center relative z-10"><Download size={24} className="mr-2.5 group-hover:animate-bounce"/>Download CV</span>
+        </button>
+        <button className="group relative overflow-hidden h-12 w-full bg-gradient-to-r from-dark to-primary rounded-full text-white font-medium transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-gradient-to-r before:from-light before:to-white before:duration-300 before:ease-out hover:text-primary hover:before:h-40 hover:before:w-full">
+          <span className="flex justify-center items-center relative z-10"><PhoneOutgoing size={24} className="mr-2.5 group-hover:animate-shake"/>Get in touch</span>
+        </button>
+      </div>
+      {/* Main Card */}
+      <div className="bg-light rounded-3xl shadow-3xl w-[990px] h-5/6">
+      
+      </div>
     </div>
   );
 }
