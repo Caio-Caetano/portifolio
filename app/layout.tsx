@@ -12,6 +12,9 @@ const kanitFont = Kanit({
 export const metadata: Metadata = {
   title: "My portifolio",
   description: "My portifolio: Caio Lopes Caetano",
+  other: {
+    google: "notranslate"
+  }
 };
 
 export default function RootLayout({
@@ -22,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${kanitFont.variable}`}
+        className={`${kanitFont.className}`}
       >
         {children}
       </body>
