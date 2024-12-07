@@ -1,0 +1,169 @@
+{
+    "me": {
+        "name": "Caio Caetano",
+        "role": "Software Engineer",
+        "city": "Sao Jose dos Campos",
+        "state": "Sao Paulo",
+        "country": "Brazil",
+        "phone": "+55 12 98135-1855",
+        "email": "caio.lcaetano@gmail.com",
+        "links": {
+            "github": "https://github.com/Caio-Caetano",
+            "linkedin": "https://www.linkedin.com/in/caio-caetano/",
+            "resume": "#"
+        }
+    },
+    "aboutme": {
+        "p1": "Hello world, I'm a passionate web and mobile developer with proficiency in Flutter, React, Dart, and Python. I’m resilient and love tackling even the smallest bugs, ensuring nothing is left unresolved.",
+        "p2": "Coffee enthusiast and car lover, I spend my free time gaming and staying curious about technology.",
+        "experience": [
+            {
+                "title": "Flutter",
+                "time": "4+ Years",
+                "icon": "/flutter.svg"
+            },
+            {
+                "title": "Dart",
+                "time": "4+ Years",
+                "icon": "/dart.svg"
+            },
+            {
+                "title": "React",
+                "time": "2+ Years",
+                "icon": "/react.svg"
+            },
+            {
+                "title": "Python",
+                "time": "4+ Years",
+                "icon": "/python.svg"
+            }
+        ],
+        "action": {
+            "title": "More about my experience",
+            "ref": "#"
+        }
+    },
+    "bucketlist": {
+        "Technology": {
+            "icon": "Cpu",
+            "itens": [
+                {
+                    "item": "Deploy a Flutter App",
+                    "done": true
+                },
+                {
+                    "item": "Code a Fullstack",
+                    "done": true
+                },
+                {
+                    "item": "Deploy a React App",
+                    "done": false
+                },
+                {
+                    "item": "Code an App that uses AI",
+                    "done": false
+                },
+                {
+                    "item": "Contribute to improve one of my favorites frameworks",
+                    "done": false
+                }
+            ]
+        },
+        "Traveling": {
+            "icon": "Plane",
+            "itens": [
+                {
+                    "item": "Visit New York, USA",
+                    "done": false
+                },
+                {
+                    "item": "Visit Los Angeles, USA",
+                    "done": false
+                },
+                {
+                    "item": "Visit Orlando, USA",
+                    "done": true,
+                    "date": "December, 2022"
+                },
+                {
+                    "item": "Visit London, England",
+                    "done": false
+                },
+                {
+                    "item": "Visit Stockholm, Sweden",
+                    "done": false
+                },
+                {
+                    "item": "Visit Canada",
+                    "done": false
+                },
+                {
+                    "item": "Visit Japan",
+                    "done": false
+                },
+                {
+                    "item": "Obtain dual citizenship with another country",
+                    "done": false
+                },
+                {
+                    "item": "See the Northern Lights",
+                    "done": false
+                },
+                {
+                    "item": "Drink coffee watching the snow falling in Finland",
+                    "done": false
+                },
+                {
+                    "item": "Move to Canada or USA",
+                    "done": false
+                }
+            ]
+        },
+        "Gaming": {
+            "icon": "Gamepad2",
+            "itens": [
+                {
+                    "item": "Reach rating 15k - 19k on Counter-Strike 2",
+                    "done": true
+                },
+                {
+                    "item": "Reach rating 20k+ on Counter-Strike 2",
+                    "done": false
+                },
+                {
+                    "item": "Reach rank Platinum on League of Legends",
+                    "done": true
+                },
+                {
+                    "item": "Reach rank Diamon on League of Legends",
+                    "done": false
+                },
+                {
+                    "item": "Create a stabilized base on Project Zomboid",
+                    "done": false
+                }
+            ]
+        },
+        "Misc": {
+            "icon": "CircleEllipsis",
+            "itens": [
+                {
+                    "item": "Read Game of Thrones collection",
+                    "done": false
+                },
+                {
+                    "item": "Own a house",
+                    "done": false
+                },
+                {
+                    "item": "Own a car",
+                    "done": false
+                },
+                {
+                    "item": "Have a positive impact in world",
+                    "done": false
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,169 @@
+{
+    "me": {
+        "name": "Caio Caetano",
+        "role": "Engenheiro de Software",
+        "city": "São José dos Campos",
+        "state": "São Paulo",
+        "country": "Brasil",
+        "phone": "+55 12 98135-1855",
+        "email": "caio.lcaetano@gmail.com",
+        "links": {
+            "github": "https://github.com/Caio-Caetano",
+            "linkedin": "https://www.linkedin.com/in/caio-caetano/",
+            "resume": "#"
+        }
+    },
+    "aboutme": {
+        "p1": "Olá! Sou um desenvolvedor dedicado à criação de soluções web e mobile, com ampla experiência em Flutter, React, Dart e Python. Tenho um compromisso com a excelência, sempre buscando resolver até os menores detalhes para garantir que tudo funcione perfeitamente.",
+        "p2": "Apaixonado por café e carros, aproveito meu tempo livre explorando o universo dos jogos e me mantendo atualizado com as inovações tecnológicas.",
+        "experience": [
+            {
+                "title": "Flutter",
+                "time": "4+ Anos",
+                "icon": "/flutter.svg"
+            },
+            {
+                "title": "Dart",
+                "time": "4+ Anos",
+                "icon": "/dart.svg"
+            },
+            {
+                "title": "React",
+                "time": "2+ Anos",
+                "icon": "/react.svg"
+            },
+            {
+                "title": "Python",
+                "time": "4+ Anos",
+                "icon": "/python.svg"
+            }
+        ],
+        "action": {
+            "title": "Mais sobre minha experiência",
+            "ref": "#"
+        }
+    },
+    "bucketlist": {
+        "Tecnologia": {
+            "icon": "Cpu",
+            "itens": [
+                {
+                    "item": "Publicar um aplicativo Flutter",
+                    "done": true
+                },
+                {
+                    "item": "Codificar um Fullstack",
+                    "done": true
+                },
+                {
+                    "item": "Publicar um aplicativo React",
+                    "done": false
+                },
+                {
+                    "item": "Codificar um aplicativo que use IA",
+                    "done": false
+                },
+                {
+                    "item": "Contribuir para melhorar um dos meus frameworks favoritos",
+                    "done": false
+                }
+            ]
+        },
+        "Viagem": {
+            "icon": "Plane",
+            "itens": [
+                {
+                    "item": "Visitar Nova York, EUA",
+                    "done": false
+                },
+                {
+                    "item": "Visitar Los Angeles, EUA",
+                    "done": false
+                },
+                {
+                    "item": "Visitar Orlando, EUA",
+                    "done": true,
+                    "date": "Dezembro, 2022"
+                },
+                {
+                    "item": "Visitar Londres, Inglaterra",
+                    "done": false
+                },
+                {
+                    "item": "Visitar Estocolmo, Suécia",
+                    "done": false
+                },
+                {
+                    "item": "Visitar o Canadá",
+                    "done": false
+                },
+                {
+                    "item": "Visitar o Japão",
+                    "done": false
+                },
+                {
+                    "item": "Obter cidadania dupla com outro país",
+                    "done": false
+                },
+                {
+                    "item": "Ver a Aurora Boreal",
+                    "done": false
+                },
+                {
+                    "item": "Tomar café vendo a neve cair na Finlândia",
+                    "done": false
+                },
+                {
+                    "item": "Mudar para o Canadá ou EUA",
+                    "done": false
+                }
+            ]
+        },
+        "Games": {
+            "icon": "Gamepad2",
+            "itens": [
+                {
+                    "item": "Alcançar uma classificação de 15k - 19k no Counter-Strike 2",
+                    "done": true
+                },
+                {
+                    "item": "Alcançar uma classificação de 20k+ no Counter-Strike 2",
+                    "done": false
+                },
+                {
+                    "item": "Alcançar o rank Platinum no League of Legends",
+                    "done": true
+                },
+                {
+                    "item": "Alcançar o rank Diamond no League of Legends",
+                    "done": false
+                },
+                {
+                    "item": "Criar uma base estabilizada no Project Zomboid",
+                    "done": false
+                }
+            ]
+        },
+        "Outros": {
+            "icon": "CircleEllipsis",
+            "itens": [
+                {
+                    "item": "Ler a coleção de Game of Thrones",
+                    "done": false
+                },
+                {
+                    "item": "Possuir uma casa",
+                    "done": false
+                },
+                {
+                    "item": "Possuir um carro",
+                    "done": false
+                },
+                {
+                    "item": "Ter um impacto positivo no mundo",
+                    "done": false
+                }
+            ]
+        }
+    }
+}
