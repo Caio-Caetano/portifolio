@@ -8,7 +8,11 @@ import BucketlistComponent from "../Bucketlist";
 
 import { Skeleton } from "@nextui-org/react";
 
-export default function AboutMe() {
+interface AboutMeProps {
+    onActionClick?: () => void;
+  }
+
+const AboutMe: React.FC<AboutMeProps> = ({ onActionClick }) => {
     const { language } = useLanguage();
     const data = usePortfolioData(language);
 
@@ -21,6 +25,11 @@ export default function AboutMe() {
                 <div className="flex flex-wrap justify-around mt-30">
                     {[...Array(4)].map((_, index) => (
                         <Skeleton key={index} className="w-[200px] h-[150px] rounded-lg mb-4" />
+                    ))}
+                </div>
+                <div className="flex flex-col gap-4 mt-10">
+                    {[...Array(4)].map((_, index) => (
+                        <Skeleton key={index} className="w-full h-5" />
                     ))}
                 </div>
             </div>
@@ -38,7 +47,7 @@ export default function AboutMe() {
                     ))
                 }
             </div>
-            <a className="relative mt-2.5 self-end cursor-pointer before:bg-black before:absolute before:-bottom-0 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100">More about my experience</a>
+            <a onClick={onActionClick} className="relative mt-2.5 self-end cursor-pointer before:bg-black before:absolute before:-bottom-0 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100">{data.aboutme.action.title}</a>
             <div className="mt-5 lg:h-[300px] pl-3 lg:overflow-y-scroll custom-scrollbar">
                 <h1 className="font-semibold text-2xl pl-2">Bucket List</h1>
                 <BucketlistComponent data={data.bucketlist} />
@@ -46,3 +55,5 @@ export default function AboutMe() {
         </div>
     );
 }
+
+export default AboutMe;

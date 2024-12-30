@@ -15,7 +15,7 @@ export const LanguageSwitch = () => {
       };
 
     return (
-        <div className="flex justify-end gap-2">
+        <div className="flex justify-end gap-2 mb-3">
             <Component {...getBaseProps()}>
                 <VisuallyHidden>
                 <input {...getInputProps()} onClick={handleLanguageChange}/>

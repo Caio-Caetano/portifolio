@@ -11,8 +11,20 @@
             "github": "https://github.com/Caio-Caetano",
             "linkedin": "https://www.linkedin.com/in/caio-caetano/",
             "resume": "#"
+        },
+        "btns": {
+            "download": "Download CV",
+            "contact": "Entre em contato"
         }
     },
+    "tabs": [
+        { "key": "aboutme", "title": "Sobre Mim", "component": "AboutMe" },
+        { "key": "projects", "title": "Projetos", "component": "Projects" },
+        { "key": "career", "title": "Carreira", "component": "Career" },
+        { "key": "education", "title": "Educação", "component": "Education" },
+        { "key": "experience", "title": "Experiência", "component": "Experience" },
+        { "key": "contact", "title": "Contato", "component": "Contact" }
+    ],
     "aboutme": {
         "p1": "Olá! Sou um desenvolvedor dedicado à criação de soluções web e mobile, com ampla experiência em Flutter, React, Dart e Python. Tenho um compromisso com a excelência, sempre buscando resolver até os menores detalhes para garantir que tudo funcione perfeitamente.",
         "p2": "Apaixonado por café e carros, aproveito meu tempo livre explorando o universo dos jogos e me mantendo atualizado com as inovações tecnológicas.",
@@ -165,5 +177,37 @@
                 }
             ]
         }
-    }
+    },
+    "projects": [
+        {
+            "title": "VendiAqui - App",
+            "url": "https://vendiaqui.wordpress.com/behindtheapp/",
+            "img" : "/logo-vendiaqui.png",
+            "langs" : ["/flutter.svg", "/dart.svg", "/mysql.svg", "/aws.svg"]
+        },
+        {
+            "title": "VendiAqui - Web",
+            "url": "https://vendiaqui.wordpress.com/behindtheapp/",
+            "img" : "/logo-vendiaqui.png",
+            "langs" : ["/react.svg", "/tailwind.svg", "/mysql.svg", "/aws.svg"]
+        },
+        {
+            "title": "CondoSync - Fullstack",
+            "url": "https://condosynccom.wordpress.com/tecnologias/",
+            "img" : "/logo-condosync.png",
+            "langs" : ["/flutter.svg", "/dart.svg", "/mysql.svg", "/aws.svg", "/python.svg"]
+        },
+        {
+            "title": "Web App de Inscrição",
+            "url": "https://www.catequesepcj.com.br/",
+            "img" : "/logo-pcj.png",
+            "langs" : ["/flutter.svg", "/dart.svg", "/firebase.svg"]
+        },
+        {
+            "title": "Pequenos Apps em Python",
+            "url": "https://github.com/Caio-Caetano",
+            "img" : "/logo-python.png",
+            "langs" : ["/python.svg"]
+        }
+    ]
 }

@@ -11,4 +11,8 @@ export interface Me {
       linkedin: string;
       resume: string;
     };
+    btns: {
+      download: string;
+      contact: string;
+    }
   }

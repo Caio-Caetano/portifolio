@@ -11,8 +11,20 @@
             "github": "https://github.com/Caio-Caetano",
             "linkedin": "https://www.linkedin.com/in/caio-caetano/",
             "resume": "#"
+        },
+        "btns": {
+            "download": "Download CV",
+            "contact": "Get in touch"
         }
     },
+    "tabs": [
+        { "key": "aboutme", "title": "About me", "component": "AboutMe" },
+        { "key": "projects", "title": "Projects", "component": "Projects" },
+        { "key": "career", "title": "Career", "component": "Career" },
+        { "key": "education", "title": "Education", "component": "Education" },
+        { "key": "experience", "title": "Experience", "component": "Experience" },
+        { "key": "contact", "title": "Contact", "component": "Contact" }
+    ],
     "aboutme": {
         "p1": "Hello world, I'm a passionate web and mobile developer with proficiency in Flutter, React, Dart, and Python. I’m resilient and love tackling even the smallest bugs, ensuring nothing is left unresolved.",
         "p2": "Coffee enthusiast and car lover, I spend my free time gaming and staying curious about technology.",
@@ -165,5 +177,37 @@
                 }
             ]
         }
-    }
+    },
+    "projects": [
+        {
+            "title": "VendiAqui - App",
+            "url": "https://vendiaqui.wordpress.com/behindtheapp/",
+            "img" : "/logo-vendiaqui.png",
+            "langs" : ["/flutter.svg", "/dart.svg", "/mysql.svg", "/aws.svg"]
+        },
+        {
+            "title": "VendiAqui - Web",
+            "url": "https://vendiaqui.wordpress.com/behindtheapp/",
+            "img" : "/logo-vendiaqui.png",
+            "langs" : ["/react.svg", "/tailwind.svg", "/mysql.svg", "/aws.svg"]
+        },
+        {
+            "title": "CondoSync - Fullstack",
+            "url": "https://condosynccom.wordpress.com/tecnologias/",
+            "img" : "/logo-condosync.png",
+            "langs" : ["/flutter.svg", "/dart.svg", "/mysql.svg", "/aws.svg", "/python.svg"]
+        },
+        {
+            "title": "Enrollment Web App",
+            "url": "https://www.catequesepcj.com.br/",
+            "img" : "/logo-pcj.png",
+            "langs" : ["/flutter.svg", "/dart.svg", "/firebase.svg"]
+        },
+        {
+            "title": "Small Apps in Python",
+            "url": "https://github.com/Caio-Caetano",
+            "img" : "/logo-python.png",
+            "langs" : ["/python.svg"]
+        }
+    ]
 }

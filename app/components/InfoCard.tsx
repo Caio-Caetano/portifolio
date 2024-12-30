@@ -85,10 +85,10 @@ export default function InfoCard() {
                 <a className="transition-all duration-200 hover:scale-125" href={data.me.links.github} target='_blank'><Github size={24} className="mr-2.5" /></a>
             </div>
             <button className="group relative mt-auto overflow-hidden mb-2.5 h-12 w-full bg-gradient-to-r from-light to-white rounded-full text-primary font-medium transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-dark before:rounded-full before:duration-100 before:ease-linear hover:bg-white hover:text-white hover:before:border-[25px]">
-                <span className="flex justify-center items-center relative z-10"><Download size={24} className="mr-2.5 group-hover:animate-bounce" />Download CV</span>
+                <span className="flex justify-center items-center relative z-10"><Download size={24} className="mr-2.5 group-hover:animate-bounce" />{data.me.btns.download}</span>
             </button>
             <button className="group relative overflow-hidden h-12 w-full bg-gradient-to-r from-dark to-primary rounded-full text-white font-medium transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-gradient-to-r before:from-light before:to-white before:duration-300 before:ease-out hover:text-primary hover:before:h-40 hover:before:w-full">
-                <span className="flex justify-center items-center relative z-10"><PhoneOutgoing size={24} className="mr-2.5 group-hover:animate-shake" />Get in touch</span>
+                <span className="flex justify-center items-center relative z-10"><PhoneOutgoing size={24} className="mr-2.5 group-hover:animate-shake" />{data.me.btns.contact}</span>
             </button>
         </div>
     )
