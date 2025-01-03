@@ -180,6 +180,12 @@
     },
     "projects": [
         {
+            "title": "Frenty",
+            "url": "https://tudona.frenty.com.br/",
+            "img" : "/frenty-logo.png",
+            "langs" : ["/php.svg", "/html.svg", "/css.svg", "/js.svg"]
+        },
+        {
             "title": "VendiAqui - App",
             "url": "https://vendiaqui.wordpress.com/behindtheapp/",
             "img" : "/logo-vendiaqui.png",
@@ -209,5 +215,110 @@
             "img" : "/logo-python.png",
             "langs" : ["/python.svg"]
         }
-    ]
+    ],
+    "career": [
+        {
+            "title": "Frenty",
+            "description": "Joined a B2B company, contributing to the development and maintenance of a multi-system ERP with CRM, logistics management, and a mobile application.",
+            "time": "Aug/2024 - Present"
+        },
+        {
+            "title": "Self-employed",
+            "description": "Worked on freelance projects, developing mobile applications and websites independently.",
+            "time": "Jan/2022 - Aug/2024"
+        },
+        {
+            "title": "Projects",
+            "description": "Undertook small-scale projects during college, focusing on building a foundation in software development.",
+            "time": "Jan/2019 - Dec/2023"
+        }
+    ],
+    "education": [
+        {
+            "title": "Bachelor's Computer Engineering",
+            "organization": "ETEP",
+            "local": "Sao Jose dos Campos - Brazil",
+            "date": "Jan/2019 - Dec/2023",
+            "url": ""
+        },
+        {
+            "title": "React Native Course",
+            "organization": "Udemy",
+            "local": "Remote",
+            "date": "Aug/2023",
+            "url": "https://www.udemy.com/certificate/UC-bfae546b-b174-4eb7-ac26-c7327fed17f6/"
+        },
+        {
+            "title": "Flutter Course",
+            "organization": "Udemy",
+            "local": "Remote",
+            "date": "Jun/2023",
+            "url": "https://www.udemy.com/certificate/UC-49a385fb-f21a-4595-be9c-1757ae712bf4/"
+        }
+    ],
+    "experience": [
+        {
+            "lang": "Flutter",
+            "time": "4+ Years",
+            "stars": "4.5",
+            "img": "/flutter.svg"
+        },
+        {
+            "lang": "Dart",
+            "time": "4+ Years",
+            "stars": "4.5",
+            "img": "/dart.svg"
+        },
+        {
+            "lang": "React",
+            "time": "2+ Years",
+            "stars": "3.5",
+            "img": "/react.svg"
+        },
+        {
+            "lang": "Python",
+            "time": "4+ Years",
+            "stars": "4",
+            "img": "/python.svg"
+        },
+        {
+            "lang": "HTML",
+            "time": "1+ Years",
+            "stars": "3",
+            "img": "/html.svg"
+        },
+        {
+            "lang": "CSS",
+            "time": "1+ Years",
+            "stars": "3",
+            "img": "/css.svg"
+        },
+        {
+            "lang": "JavaScript",
+            "time": "1+ Years",
+            "stars": "3",
+            "img": "/js.svg"
+        },
+        {
+            "lang": "PHP",
+            "time": "1+ Years",
+            "stars": "3",
+            "img": "/php.svg"
+        },
+        {
+            "lang": "MySQL",
+            "time": "4+ Years",
+            "stars": "4.5",
+            "img": "/mysql.svg"
+        }
+    ],
+    "contact": {
+        "title": "Send me a message",
+        "name": "Name*",
+        "company": "Company Name*",
+        "email": "Email*",
+        "message": "Message*",
+        "button": "Send Message",
+        "buttonloading": "Sending..."
+    }
 }

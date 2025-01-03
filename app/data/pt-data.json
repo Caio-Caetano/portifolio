@@ -180,6 +180,12 @@
     },
     "projects": [
         {
+            "title": "Frenty",
+            "url": "https://tudona.frenty.com.br/",
+            "img" : "/frenty-logo.png",
+            "langs" : ["/php.svg", "/html.svg", "/css.svg", "/js.svg"]
+        },
+        {
             "title": "VendiAqui - App",
             "url": "https://vendiaqui.wordpress.com/behindtheapp/",
             "img" : "/logo-vendiaqui.png",
@@ -209,5 +215,110 @@
             "img" : "/logo-python.png",
             "langs" : ["/python.svg"]
         }
-    ]
+    ],
+    "career": [
+        {
+            "title": "Frenty",
+            "description": "Uma empresa B2B, onde trabalho desenvolvendo um sistema ERP com CRM e também controle de transportadoras, além de um aplicativo mobile.",
+            "time": "08/2024 - Atual"
+        },
+        {
+            "title": "Autônomo",
+            "description": "Projetos autônomos, desenvolvendo de aplicativos e websites por conta própria.",
+            "time": "01/2022 - 08/2024"
+        },
+        {
+            "title": "Projetos",
+            "description": "Pequenos trabalhos e projetos feitos durante o período da faculdade.",
+            "time": "01/2019 - 12/2023"
+        }
+    ],
+    "education": [
+        {
+            "title": "Bacharel em Engenharia da Computação",
+            "organization": "ETEP",
+            "local": "São José dos Campos - Brasil",
+            "date": "Jan/2019 - Dez/2023",
+            "url": ""
+        },
+        {
+            "title": "Curso de React Native",
+            "organization": "Udemy",
+            "local": "Remoto",
+            "date": "Aug/2023",
+            "url": "https://www.udemy.com/certificate/UC-bfae546b-b174-4eb7-ac26-c7327fed17f6/"
+        },
+        {
+            "title": "Curso de Flutter",
+            "organization": "Udemy",
+            "local": "Remoto",
+            "date": "Jun/2023",
+            "url": "https://www.udemy.com/certificate/UC-49a385fb-f21a-4595-be9c-1757ae712bf4/"
+        }
+    ],
+    "experience": [
+        {
+            "lang": "Flutter",
+            "time": "4+ Anos",
+            "stars": "4.5",
+            "img": "/flutter.svg"
+        },
+        {
+            "lang": "Dart",
+            "time": "4+ Anos",
+            "stars": "4.5",
+            "img": "/dart.svg"
+        },
+        {
+            "lang": "React",
+            "time": "2+ Anos",
+            "stars": "3.5",
+            "img": "/react.svg"
+        },
+        {
+            "lang": "Python",
+            "time": "4+ Anos",
+            "stars": "4",
+            "img": "/python.svg"
+        },
+        {
+            "lang": "HTML",
+            "time": "1+ Anos",
+            "stars": "3",
+            "img": "/html.svg"
+        },
+        {
+            "lang": "CSS",
+            "time": "1+ Anos",
+            "stars": "3",
+            "img": "/css.svg"
+        },
+        {
+            "lang": "JavaScript",
+            "time": "1+ Anos",
+            "stars": "3",
+            "img": "/js.svg"
+        },
+        {
+            "lang": "PHP",
+            "time": "1+ Anos",
+            "stars": "3",
+            "img": "/php.svg"
+        },
+        {
+            "lang": "MySQL",
+            "time": "4+ Anos",
+            "stars": "4.5",
+            "img": "/mysql.svg"
+        }
+    ],
+    "contact": {
+        "title": "Me envie uma mensagem",
+        "name": "Nome*",
+        "company": "Nome da Empresa*",
+        "email": "Email*",
+        "message": "Mensagem*",
+        "button": "Enviar Mensagem",
+        "buttonloading": "Enviando..."
+    }
 }

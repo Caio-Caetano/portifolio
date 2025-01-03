@@ -23,6 +23,7 @@ export default {
                 blue: "var(--blue)",
                 white: "var(--white)",
                 black: "var(--black)",
+                gray: "var(--gray)"
             },
             boxShadow: {
                 '3xl': '6px 6px 10px rgba(11, 18, 21, 0.3)',

@@ -10,7 +10,7 @@ const kanitFont = Kanit({
 });
 
 export const metadata: Metadata = {
-  title: "My portifolio",
+  title: "Caio Caetano",
   description: "My portifolio: Caio Lopes Caetano",
   other: {
     google: "notranslate"

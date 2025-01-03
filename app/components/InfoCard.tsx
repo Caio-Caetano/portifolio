@@ -46,7 +46,7 @@ export default function InfoCard() {
                 </div>
                 <div className="flex flex-col ml-30 ml-0 items-center md:ml-30 md:items-start lg:ml-0 lg:items-center">
                     <span className="text-white text-[32px] font-semibold">{data.me.name}</span>
-                    <hr className="bg-white w-1/2 my-2.5 lg:w-2/5 lg:m-2.5" />
+                    <hr className="text-white w-1/2 my-2.5 lg:w-2/5 lg:m-2.5" />
                     <span className="text-white text-[15px] mb-30">{data.me.role}</span>
                 </div>
                 <button onClick={toggleInfoCard} className="text-white mb-3 md:ml-auto lg:hidden">
