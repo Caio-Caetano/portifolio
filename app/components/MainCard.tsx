@@ -16,11 +16,11 @@ import { Skeleton } from '@nextui-org/react';
 // Define component types
 interface ComponentMap {
     AboutMe: React.ComponentType<{ onActionClick?: () => void }>;
-    Projects: React.ComponentType<{}>;
-    Career: React.ComponentType<{}>;
-    Education: React.ComponentType<{}>;
-    Experience: React.ComponentType<{}>;
-    Contact: React.ComponentType<{}>;
+    Projects: React.ComponentType<Record<string, unknown>>;
+    Career: React.ComponentType<Record<string, unknown>>;
+    Education: React.ComponentType<Record<string, unknown>>;
+    Experience: React.ComponentType<Record<string, unknown>>;
+    Contact: React.ComponentType<Record<string, unknown>>;
 }
 
 // Component mapping
@@ -56,7 +56,7 @@ export default function MainCard() {
                 aria-label="Options"
                 variant="underlined"
                 selectedKey={selected}
-                onSelectionChange={(key) => setSelected(key as string)} // Convertendo explicitamente para string
+                onSelectionChange={(key) => setSelected(key.toString())} // Convertendo explicitamente para string
                 classNames={{
                     base: "border-b-[1px] border-primary",
                     tabList: "gap-6 w-full pb-3",

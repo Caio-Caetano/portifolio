@@ -1,7 +1,6 @@
 import { useLanguage } from "@/app/context/LanguageContext";
 import { usePortfolioData } from "@/app/hooks/usePortifolioData";
 import { useState } from "react";
-// import ReCAPTCHA from "react-google-recaptcha";
 
 interface FormData {
     name: string;
@@ -20,7 +19,6 @@ export default function Contact() {
         email: "",
         message: "",
     });
-    // const [captchaVerified, setCaptchaVerified] = useState(false);
     const [loading, setLoading] = useState(false);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -28,17 +26,8 @@ export default function Contact() {
         setFormData((prev) => ({ ...prev, [name]: value }));
     };
 
-    // const handleCaptcha = (value: any) => {
-    //     setCaptchaVerified(!!value);
-    // };
-
-    const handleSubmit = async (e: any) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-
-        // if (!captchaVerified) {
-        //     alert("Please complete the CAPTCHA to submit the form.");
-        //     return;
-        // }
 
         setLoading(true);
 
@@ -52,7 +41,6 @@ export default function Contact() {
             if (response.ok) {
                 alert("Your message has been sent!");
                 setFormData({ name: "", email: "", message: "", company: "" });
-                // setCaptchaVerified(false);
             } else {
                 alert("Failed to send the message. Please try again.");
             }
