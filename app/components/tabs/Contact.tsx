@@ -1,6 +1,7 @@
 import { useLanguage } from "@/app/context/LanguageContext";
 import { usePortfolioData } from "@/app/hooks/usePortifolioData";
 import { useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 
 interface FormData {
     name: string;
@@ -20,6 +21,7 @@ export default function Contact() {
         message: "",
     });
     const [loading, setLoading] = useState(false);
+    const [isVerified, setIsVerified] = useState(false); // Estado para verificar o reCAPTCHA
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         const { name, value } = e.target;
@@ -29,26 +31,41 @@ export default function Contact() {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
+        if (!isVerified) {
+            alert("Please verify you are not a robot.");
+            return;
+        }
+
         setLoading(true);
 
         try {
-            const response = await fetch("https://formspree.io/f/xdkkpgdd", {
+            const formDataObj = new FormData();
+            formDataObj.append("name", formData.name);
+            formDataObj.append("company", formData.company);
+            formDataObj.append("email", formData.email);
+            formDataObj.append("message", formData.message);
+
+            await fetch("https://formspree.io/f/xdkkpgdd", {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(formData),
+                headers: { Accept: "application/json" },
+                body: formDataObj,
             });
 
-            if (response.ok) {
-                alert("Your message has been sent!");
-                setFormData({ name: "", email: "", message: "", company: "" });
-            } else {
-                alert("Failed to send the message. Please try again.");
-            }
+            alert("Your message has been sent!");
+            setFormData({ name: "", company: "", email: "", message: "" });
         } catch (err) {
             console.error(err);
-            alert("An error occurred. Please try again later.");
+            alert("There was an error sending your message.");
         } finally {
             setLoading(false);
+        }
+    };
+
+    const handleCaptchaChange = (token: string | null) => {
+        if (token) {
+            setIsVerified(true);
+        } else {
+            setIsVerified(false);
         }
     };
 
@@ -93,11 +110,22 @@ export default function Contact() {
                         required
                     ></textarea>
                 </div>
+                {/* Adicionando o reCAPTCHA */}
+                <div className="my-4">
+                    <ReCAPTCHA
+                        sitekey="6LecBbAqAAAAAH54jd8O2ynVbfp_S9cJ-mgjVFo5" // Substitua pela sua "Site Key"
+                        onChange={handleCaptchaChange}
+                    />
+                </div>
                 <div className="my-2 bg-white rounded-lg shadow-2xl transition-all ease-in hover:-translate-y-2">
                     <button
                         type="submit"
-                        disabled={loading}
-                        className="uppercase text-sm font-bold tracking-wide bg-blue-900 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
+                        disabled={loading || !isVerified} // Desativa se reCAPTCHA não estiver verificado
+                        className={`uppercase text-sm font-bold tracking-wide p-3 rounded-lg w-full focus:outline-none focus:shadow-outline ${
+                            loading || !isVerified
+                                ? "bg-gray-400 text-gray-200 cursor-not-allowed"
+                                : "bg-blue-900 text-gray-100"
+                        }`}
                     >
                         {loading ? data?.contact.buttonloading : data?.contact.button}
                     </button>
