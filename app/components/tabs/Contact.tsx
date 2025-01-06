@@ -113,7 +113,7 @@ export default function Contact() {
                 {/* Adicionando o reCAPTCHA */}
                 <div className="my-4">
                     <ReCAPTCHA
-                        sitekey="6LecBbAqAAAAAH54jd8O2ynVbfp_S9cJ-mgjVFo5" // Substitua pela sua "Site Key"
+                        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""} // Substitua pela sua "Site Key"
                         onChange={handleCaptchaChange}
                     />
                 </div>
